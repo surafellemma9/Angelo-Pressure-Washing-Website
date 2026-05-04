@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Contact Angelo Pressure Pro for a free pressure washing or exterior cleaning estimate. Call 703-388-6628 or send a message."
+    />
+    <title>Contact | Free Estimate | Angelo Pressure Pro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="logo" href="index.html"
+          >Angelo Pressure Pro
+          <span>Residential exterior cleaning</span></a
+        >
+        <nav class="nav-desktop" aria-label="Main">
+          <a href="index.html">Home</a>
+          <a href="my-work.html">My Work</a>
+          <a href="services.html">Services</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="contact.html" class="is-active">Contact</a>
+        </nav>
+        <div class="header-cta">
+          <a class="btn btn-primary nav-phone" href="tel:+17033886628">Call 703-388-6628</a>
+          <button
+            type="button"
+            class="nav-toggle"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <header class="page-hero">
+        <div class="page-hero-inner">
+          <h1>Get a Free Estimate</h1>
+          <p>
+            Text, call, or send a message anytime and I’ll get back to you as soon as possible. Fast communication is part of every residential exterior cleaning project — whether you need pressure washing, soft washing, paver cleaning, or full house washing.
+          </p>
+        </div>
+      </header>
+
+      <section class="section section-alt" aria-label="Contact options and form">
+        <div class="section-inner contact-layout">
+          <div>
+            <div class="contact-card">
+              <h2>Call or email</h2>
+              <div class="contact-links">
+                <a href="tel:+17033886628">
+                  <span class="contact-icon" aria-hidden="true">📞</span>
+                  <span><strong>703-388-6628</strong><br /><span style="font-weight: 400; font-size: 0.9rem; color: var(--color-muted)">Tap to call</span></span>
+                </a>
+                <a href="sms:+17033886628">
+                  <span class="contact-icon" aria-hidden="true">💬</span>
+                  <span><strong>Text for a free estimate</strong><br /><span style="font-weight: 400; font-size: 0.9rem; color: var(--color-muted)">Same number</span></span>
+                </a>
+                <a href="mailto:Angelopressurepro@gmail.com">
+                  <span class="contact-icon" aria-hidden="true">✉</span>
+                  <span><strong>Angelopressurepro@gmail.com</strong><br /><span style="font-weight: 400; font-size: 0.9rem; color: var(--color-muted)">Tap to email</span></span>
+                </a>
+              </div>
+              <div class="warranty-box">
+                <strong>Satisfaction guaranteed.</strong> If anything looks off within 48 hours, I’ll come back and fix it.
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-card contact-form-wrap">
+            <h2>Send a message</h2>
+            <p class="form-note">
+              Send a few photos of the area you want cleaned for the fastest estimate. After you add your free key from
+              <a href="https://web3forms.com" rel="noopener noreferrer">Web3Forms</a>, form submissions (including photos) go to your email.
+            </p>
+            <div id="form-success" class="form-success" role="status"></div>
+            <!-- Replace YOUR_ACCESS_KEY with your key from https://web3forms.com -->
+            <form
+              id="contact-form"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              enctype="multipart/form-data"
+            >
+              <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY" />
+              <input type="hidden" name="subject" value="New estimate request — Angelo Pressure Pro" />
+              <input type="checkbox" name="botcheck" value="" style="display: none" tabindex="-1" autocomplete="off" />
+
+              <div class="form-grid two">
+                <div>
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" required autocomplete="name" />
+                </div>
+                <div>
+                  <label for="phone">Phone number</label>
+                  <input id="phone" name="phone" type="tel" required autocomplete="tel" />
+                </div>
+              </div>
+              <div class="form-grid" style="margin-top: 1rem">
+                <div>
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" required autocomplete="email" />
+                </div>
+              </div>
+              <div class="form-grid" style="margin-top: 1rem">
+                <div>
+                  <label for="address">Address</label>
+                  <input id="address" name="address" type="text" autocomplete="street-address" />
+                </div>
+              </div>
+              <div class="form-grid" style="margin-top: 1rem">
+                <div>
+                  <label for="service">Service needed</label>
+                  <select id="service" name="service" required>
+                    <option value="">Select a service</option>
+                    <option value="Pressure washing">Pressure washing</option>
+                    <option value="House soft washing">House soft washing</option>
+                    <option value="Paver cleaning">Paver cleaning</option>
+                    <option value="Deck cleaning">Deck cleaning</option>
+                    <option value="Concrete cleaning">Concrete cleaning</option>
+                    <option value="Brick cleaning">Brick cleaning</option>
+                    <option value="Window cleaning">Window cleaning</option>
+                    <option value="Multiple / not sure">Multiple / not sure</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-grid" style="margin-top: 1rem">
+                <div>
+                  <label for="message">Message / project details</label>
+                  <textarea id="message" name="message" required placeholder="Tell me about the areas you want cleaned, approximate size, and any timing preferences."></textarea>
+                </div>
+              </div>
+              <div class="form-grid" style="margin-top: 1rem">
+                <div>
+                  <label for="attachment">Photos (optional)</label>
+                  <input id="attachment" name="attachment" type="file" accept="image/*" multiple />
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary btn-lg">Send message</button>
+                <a class="btn btn-secondary btn-lg" href="tel:+17033886628">Call instead</a>
+              </div>
+              <p class="form-hint">
+                Main call-to-action: <strong>Text or Call Anytime for a Free Estimate</strong> — 703-388-6628
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <strong>Angelo Pressure Pro</strong>
+          <p>
+            Phone: <a href="tel:+17033886628">703-388-6628</a><br />
+            Email:
+            <a href="mailto:Angelopressurepro@gmail.com">Angelopressurepro@gmail.com</a>
+          </p>
+          <p class="footer-cta">Text or Call Anytime for a Free Estimate</p>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <ul>
+            <li>Pressure Washing</li>
+            <li>Soft Washing</li>
+            <li>Paver Cleaning</li>
+            <li>Deck Cleaning</li>
+            <li>Concrete Cleaning</li>
+            <li>Brick Cleaning</li>
+            <li>Window Cleaning</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Warranty</h3>
+          <p>
+            Satisfaction guaranteed. If anything looks off within 48 hours, I’ll come back and fix it.
+          </p>
+          <p style="margin-top: 1rem">
+            <a class="btn btn-secondary" href="contact.html">Request a Free Estimate</a>
+          </p>
+        </div>
+      </div>
+      <p class="footer-bottom">
+        © <span id="y"></span> Angelo Pressure Pro. Residential pressure washing and exterior cleaning.
+      </p>
+    </footer>
+
+    <div class="mobile-cta-bar">
+      <a class="btn btn-primary" href="tel:+17033886628">Text or Call — Free Estimate</a>
+    </div>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/contact-form.js"></script>
+  </body>
+</html>
