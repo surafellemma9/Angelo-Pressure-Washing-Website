@@ -36,10 +36,16 @@
     <header class="site-header site-header--home">
       <div class="header-home-bar">
         <div class="header-home-balance" aria-hidden="true"></div>
-        <a class="logo logo--home" href="index.html"
-          >Angelo Pressure Pro
-          <span class="visually-hidden"> — Residential exterior cleaning</span></a
-        >
+        <a class="logo logo--home" href="index.html">
+          <img
+            class="logo-img"
+            src="images/logo-angelo-pressure-pro.png"
+            alt="Angelo Pressure Pro — Exterior cleaning"
+            width="1024"
+            height="472"
+            decoding="async"
+          />
+        </a>
         <div class="header-home-actions">
           <a
             class="header-home-icon"
@@ -98,71 +104,129 @@
       </section>
 
       <section class="see-difference" aria-labelledby="see-difference-heading">
-        <div class="section-inner">
+        <div class="section-inner see-difference__inner">
           <h2 id="see-difference-heading">See the Difference We Make</h2>
-          <p>
-            Our results speak for themselves. From grimy driveways to sparkling siding, we transform surfaces and restore your property’s curb appeal with professional pressure washing, soft washing, and exterior cleaning.
+          <p class="see-difference__lead">
+            Our results speak for themselves. From grimy driveways to sparkling siding, we transform surfaces and restore your property’s curb appeal.
           </p>
-        </div>
-      </section>
+          <div class="see-difference__actions">
+            <a class="btn btn-showcase" href="my-work.html">View Gallery</a>
+            <a class="btn btn-showcase" href="contact.html">Get a Quote</a>
+          </div>
 
-      <section class="section section-alt" aria-labelledby="about-heading">
-        <div class="section-inner intro-grid">
-          <div class="intro-text">
-            <div class="section-head">
-              <h2 id="about-heading">About Angelo Pressure Pro</h2>
-              <p>Quality-focused residential exterior cleaning you can trust.</p>
+          <div class="home-showcase" id="home-showcase">
+            <div class="home-showcase__item">
+              <p class="home-showcase__title">Before &amp; after</p>
+              <div
+                class="compare-slider compare-slider--home"
+                data-compare
+                style="--compare-p: 50%"
+                role="group"
+                aria-label="Project before and after. Drag to compare."
+              >
+                <div class="compare-slider__viewport">
+                  <img
+                    class="compare-slider__after"
+                    src="images/work/slider-a-after.jpg"
+                    alt="After — exterior cleaning"
+                    width="1600"
+                    height="1200"
+                    loading="lazy"
+                    decoding="async"
+                    draggable="false"
+                  />
+                  <img
+                    class="compare-slider__before"
+                    src="images/work/slider-a-before.jpg"
+                    alt="Before — exterior cleaning"
+                    width="1600"
+                    height="1200"
+                    loading="lazy"
+                    decoding="async"
+                    draggable="false"
+                  />
+                  <div class="compare-slider__rail" aria-hidden="true">
+                    <span class="compare-slider__grip" aria-hidden="true"></span>
+                  </div>
+                  <div class="compare-slider__labels compare-slider__labels--top" aria-hidden="true">
+                    <span>Before</span><span>After</span>
+                  </div>
+                  <label class="compare-slider__control">
+                    <span class="visually-hidden">Slide to compare before and after</span>
+                    <input
+                      type="range"
+                      class="compare-slider__range"
+                      min="0"
+                      max="100"
+                      value="50"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      aria-valuenow="50"
+                    />
+                  </label>
+                </div>
+                <p class="compare-slider__hint">Slide to compare</p>
+              </div>
             </div>
-            <p>
-              Angelo Pressure Pro helps homeowners restore the look of their property with clean, detailed, and professional exterior cleaning services. I focus on quality work, clear communication, and making every job look refreshed.
-            </p>
-            <p>
-              Residential exterior cleaning including pressure washing, power washing, house washing, soft washing, driveway cleaning, paver cleaning, deck cleaning, concrete cleaning, brick cleaning, and window cleaning — all with the same attention to detail.
-            </p>
+
+            <div class="home-showcase__item">
+              <p class="home-showcase__title">Before &amp; after</p>
+              <div
+                class="compare-slider compare-slider--home"
+                data-compare
+                style="--compare-p: 50%"
+                role="group"
+                aria-label="Project before and after. Drag to compare."
+              >
+                <div class="compare-slider__viewport">
+                  <img
+                    class="compare-slider__after"
+                    src="images/work/slider-b-after.jpg"
+                    alt="After — exterior cleaning"
+                    width="1600"
+                    height="1200"
+                    loading="lazy"
+                    decoding="async"
+                    draggable="false"
+                  />
+                  <img
+                    class="compare-slider__before"
+                    src="images/work/slider-b-before.jpg"
+                    alt="Before — exterior cleaning"
+                    width="1600"
+                    height="1200"
+                    loading="lazy"
+                    decoding="async"
+                    draggable="false"
+                  />
+                  <div class="compare-slider__rail" aria-hidden="true">
+                    <span class="compare-slider__grip" aria-hidden="true"></span>
+                  </div>
+                  <div class="compare-slider__labels compare-slider__labels--top" aria-hidden="true">
+                    <span>Before</span><span>After</span>
+                  </div>
+                  <label class="compare-slider__control">
+                    <span class="visually-hidden">Slide to compare before and after</span>
+                    <input
+                      type="range"
+                      class="compare-slider__range"
+                      min="0"
+                      max="100"
+                      value="50"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      aria-valuenow="50"
+                    />
+                  </label>
+                </div>
+                <p class="compare-slider__hint">Slide to compare</p>
+              </div>
+            </div>
           </div>
-          <aside class="intro-card">
-            <h3>Satisfaction guaranteed</h3>
-            <p>
-              Satisfaction guaranteed. If anything looks off within 48 hours, I’ll come back and fix it. Your peace of mind matters as much as the final result.
-            </p>
-          </aside>
         </div>
       </section>
 
-      <section class="section" aria-labelledby="why-heading">
-        <div class="section-inner">
-          <div class="section-head">
-            <h2 id="why-heading">Why Choose Angelo Pressure Pro</h2>
-            <p>
-              From pressure washing to soft washing, every visit is built around reliability, detail, and communication.
-            </p>
-          </div>
-          <div class="why-grid">
-            <article class="why-card">
-              <div class="why-icon" aria-hidden="true">✓</div>
-              <h3>Reliable and professional</h3>
-              <p>Show up when promised, treat your property with respect, and leave the job site tidy.</p>
-            </article>
-            <article class="why-card">
-              <div class="why-icon" aria-hidden="true">◇</div>
-              <h3>Detail-focused cleaning</h3>
-              <p>Thorough prep and technique so surfaces look renewed — not just “wet and gone.”</p>
-            </article>
-            <article class="why-card">
-              <div class="why-icon" aria-hidden="true">☎</div>
-              <h3>Fast communication</h3>
-              <p>Quick replies for estimates and scheduling so you’re never left guessing.</p>
-            </article>
-            <article class="why-card">
-              <div class="why-icon" aria-hidden="true">★</div>
-              <h3>Satisfaction guaranteed</h3>
-              <p>If something isn’t right within 48 hours, I’ll make it right.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-alt" aria-labelledby="services-preview-heading">
+      <section class="section" aria-labelledby="services-preview-heading">
         <div class="section-inner">
           <div class="section-head">
             <h2 id="services-preview-heading">Services</h2>
@@ -239,6 +303,12 @@
     <script>
       document.getElementById("y").textContent = new Date().getFullYear();
     </script>
+    <script src="js/compare-slider.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      if (typeof window.initCompareSliders === "function") {
+        window.initCompareSliders();
+      }
+    </script>
   </body>
 </html>

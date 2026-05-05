@@ -23,10 +23,16 @@
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="header-inner">
-        <a class="logo" href="index.html"
-          >Angelo Pressure Pro
-          <span>Residential exterior cleaning</span></a
-        >
+        <a class="logo" href="index.html">
+          <img
+            class="logo-img"
+            src="images/logo-angelo-pressure-pro.png"
+            alt="Angelo Pressure Pro — Exterior cleaning"
+            width="1024"
+            height="472"
+            decoding="async"
+          />
+        </a>
         <nav class="nav-desktop" aria-label="Main">
           <a href="index.html">Home</a>
           <a href="my-work.html" class="is-active">My Work</a>
@@ -53,23 +59,122 @@
         <div class="page-hero-inner">
           <h1>My Work</h1>
           <p>
-            Real before-and-after jobs from Northern Virginia — drag the slider on each photo to compare. Filter by category or scroll the chips on your phone.
+            Two recent before-and-after jobs — drag each slider to compare results.
           </p>
         </div>
       </header>
 
-      <section class="section section-alt" aria-label="Project gallery">
+      <section class="section section-alt" aria-label="Before and after gallery">
         <div class="section-inner">
-          <div class="filter-bar" role="group" aria-label="Filter projects">
-            <button type="button" class="filter-btn is-active" data-filter="all">All</button>
-            <button type="button" class="filter-btn" data-filter="driveways">Driveways</button>
-            <button type="button" class="filter-btn" data-filter="pavers">Pavers &amp; Patios</button>
-            <button type="button" class="filter-btn" data-filter="house">House Washing</button>
-            <button type="button" class="filter-btn" data-filter="decks">Decks</button>
-            <button type="button" class="filter-btn" data-filter="brick">Brick &amp; Stone</button>
-            <button type="button" class="filter-btn" data-filter="concrete">Concrete</button>
+          <div class="home-showcase my-work-showcase">
+            <div class="home-showcase__item">
+              <p class="home-showcase__title">Before &amp; after</p>
+              <div
+                class="compare-slider"
+                data-compare
+                style="--compare-p: 50%"
+                role="group"
+                aria-label="Project before and after. Drag to compare."
+              >
+                <div class="compare-slider__viewport">
+                  <img
+                    class="compare-slider__after"
+                    src="images/work/slider-a-after.jpg"
+                    alt="After — exterior cleaning"
+                    width="1600"
+                    height="1200"
+                    loading="lazy"
+                    decoding="async"
+                    draggable="false"
+                  />
+                  <img
+                    class="compare-slider__before"
+                    src="images/work/slider-a-before.jpg"
+                    alt="Before — exterior cleaning"
+                    width="1600"
+                    height="1200"
+                    loading="lazy"
+                    decoding="async"
+                    draggable="false"
+                  />
+                  <div class="compare-slider__rail" aria-hidden="true">
+                    <span class="compare-slider__grip" aria-hidden="true"></span>
+                  </div>
+                  <div class="compare-slider__labels" aria-hidden="true">
+                    <span>Before</span><span>After</span>
+                  </div>
+                  <label class="compare-slider__control">
+                    <span class="visually-hidden">Slide to compare before and after</span>
+                    <input
+                      type="range"
+                      class="compare-slider__range"
+                      min="0"
+                      max="100"
+                      value="50"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      aria-valuenow="50"
+                    />
+                  </label>
+                </div>
+                <p class="compare-slider__hint">Slide to compare</p>
+              </div>
+            </div>
+
+            <div class="home-showcase__item">
+              <p class="home-showcase__title">Before &amp; after</p>
+              <div
+                class="compare-slider"
+                data-compare
+                style="--compare-p: 50%"
+                role="group"
+                aria-label="Project before and after. Drag to compare."
+              >
+                <div class="compare-slider__viewport">
+                  <img
+                    class="compare-slider__after"
+                    src="images/work/slider-b-after.jpg"
+                    alt="After — exterior cleaning"
+                    width="1600"
+                    height="1200"
+                    loading="lazy"
+                    decoding="async"
+                    draggable="false"
+                  />
+                  <img
+                    class="compare-slider__before"
+                    src="images/work/slider-b-before.jpg"
+                    alt="Before — exterior cleaning"
+                    width="1600"
+                    height="1200"
+                    loading="lazy"
+                    decoding="async"
+                    draggable="false"
+                  />
+                  <div class="compare-slider__rail" aria-hidden="true">
+                    <span class="compare-slider__grip" aria-hidden="true"></span>
+                  </div>
+                  <div class="compare-slider__labels" aria-hidden="true">
+                    <span>Before</span><span>After</span>
+                  </div>
+                  <label class="compare-slider__control">
+                    <span class="visually-hidden">Slide to compare before and after</span>
+                    <input
+                      type="range"
+                      class="compare-slider__range"
+                      min="0"
+                      max="100"
+                      value="50"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      aria-valuenow="50"
+                    />
+                  </label>
+                </div>
+                <p class="compare-slider__hint">Slide to compare</p>
+              </div>
+            </div>
           </div>
-          <div id="gallery-root" class="gallery-grid"></div>
         </div>
       </section>
 
@@ -127,9 +232,12 @@
     <script>
       document.getElementById("y").textContent = new Date().getFullYear();
     </script>
-    <script src="js/gallery-data.js"></script>
     <script src="js/compare-slider.js"></script>
-    <script src="js/gallery-render.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      if (typeof window.initCompareSliders === "function") {
+        window.initCompareSliders();
+      }
+    </script>
   </body>
 </html>
