@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
     <meta
       name="description"
       content="Angelo Pressure Pro — professional pressure washing, soft washing, and residential exterior cleaning in Northern Virginia. Free estimates. Call 703-388-6628."
@@ -28,26 +31,31 @@
       }
     </script>
   </head>
-  <body>
+  <body class="page-home">
     <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-      <div class="header-inner">
-        <a class="logo" href="index.html"
+    <header class="site-header site-header--home">
+      <div class="header-home-bar">
+        <div class="header-home-balance" aria-hidden="true"></div>
+        <a class="logo logo--home" href="index.html"
           >Angelo Pressure Pro
-          <span>Residential exterior cleaning</span></a
+          <span class="visually-hidden"> — Residential exterior cleaning</span></a
         >
-        <nav class="nav-desktop" aria-label="Main">
-          <a href="index.html" class="is-active">Home</a>
-          <a href="my-work.html">My Work</a>
-          <a href="services.html">Services</a>
-          <a href="reviews.html">Reviews</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-        <div class="header-cta">
-          <a class="btn btn-primary nav-phone" href="tel:+17033886628">Call 703-388-6628</a>
+        <div class="header-home-actions">
+          <a
+            class="header-home-icon"
+            href="tel:+17033886628"
+            aria-label="Call 703-388-6628"
+          >
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path
+                d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
           <button
             type="button"
-            class="nav-toggle"
+            class="nav-toggle nav-toggle--home"
             aria-label="Open menu"
             aria-expanded="false"
           >
@@ -55,24 +63,45 @@
           </button>
         </div>
       </div>
+      <nav class="nav-desktop nav-desktop--home" aria-label="Main">
+        <a href="index.html" class="is-active">Home</a>
+        <a href="my-work.html">My Work</a>
+        <a href="services.html">Services</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </header>
 
     <main id="main">
-      <section class="hero" aria-labelledby="hero-heading">
-        <div class="hero-inner">
-          <p class="hero-badge">Pressure washing · Soft washing · Residential exterior cleaning</p>
-          <h1 id="hero-heading">Professional Pressure Washing &amp; Exterior Cleaning</h1>
-          <p class="hero-sub">
-            Reliable exterior cleaning for homes, patios, driveways, siding, decks, pavers, brick, and more.
+      <section class="hero hero--photo" aria-labelledby="hero-heading">
+        <div
+          class="hero-photo-bg"
+          style="background-image: url('images/hero-home.jpg')"
+          role="img"
+          aria-label="Technician pressure washing home siding on a ladder"
+        ></div>
+        <div class="hero-photo-overlay" aria-hidden="true"></div>
+        <div class="hero-inner hero-inner--photo">
+          <h1 id="hero-heading">Ready for a Cleaner Property?</h1>
+          <p class="hero-sub hero-sub--photo">
+            Contact us today for a free estimate. We serve residential customers across the area and are ready to make your home shine — from siding and driveways to patios and decks.
           </p>
-          <div class="hero-cta">
-            <a class="btn btn-primary btn-lg" href="contact.html">Get a Free Estimate</a>
-            <a class="btn btn-secondary btn-lg" href="my-work.html">View My Work</a>
+          <div class="hero-cta hero-cta--photo">
+            <a class="btn btn-hero-contact" href="contact.html">Contact Us</a>
           </div>
-          <p class="hero-trust">
-            <strong>Text or Call Anytime for a Free Estimate</strong>
-            <span aria-hidden="true">·</span>
-            <a href="tel:+17033886628" style="color: #bae6fd">703-388-6628</a>
+          <p class="hero-photo-footnote">
+            <a href="tel:+17033886628">Text or call 703-388-6628</a>
+            <span class="hero-photo-dot" aria-hidden="true"> · </span>
+            <a href="my-work.html">View our work</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="see-difference" aria-labelledby="see-difference-heading">
+        <div class="section-inner">
+          <h2 id="see-difference-heading">See the Difference We Make</h2>
+          <p>
+            Our results speak for themselves. From grimy driveways to sparkling siding, we transform surfaces and restore your property’s curb appeal with professional pressure washing, soft washing, and exterior cleaning.
           </p>
         </div>
       </section>
