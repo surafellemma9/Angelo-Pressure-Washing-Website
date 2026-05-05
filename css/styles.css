@@ -445,9 +445,28 @@ a:hover {
 }
 
 .site-header--home {
+  position: sticky;
   background: #0a0a0a;
   border-bottom: none;
   backdrop-filter: none;
+  overflow: visible;
+}
+
+.site-header--home::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -22px;
+  height: 24px;
+  pointer-events: none;
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 10, 10, 0.92) 0%,
+    rgba(10, 10, 10, 0.56) 48%,
+    rgba(10, 10, 10, 0) 100%
+  );
 }
 
 .header-home-bar {
@@ -682,6 +701,8 @@ a:hover {
   font-size: 0.875rem;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.88);
+  width: 100%;
+  text-align: center;
 }
 
 .hero-photo-footnote a {
