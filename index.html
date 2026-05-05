@@ -72,7 +72,6 @@
       <nav class="nav-desktop nav-desktop--home" aria-label="Main">
         <a href="index.html" class="is-active">Home</a>
         <a href="my-work.html">My Work</a>
-        <a href="services.html">Services</a>
         <a href="reviews.html">Reviews</a>
         <a href="contact.html">Contact</a>
       </nav>
@@ -93,7 +92,7 @@
             Contact us today for a free estimate. We serve residential customers across the area and are ready to make your home shine — from siding and driveways to patios and decks.
           </p>
           <div class="hero-cta hero-cta--photo">
-            <a class="btn btn-hero-contact" href="contact.html">Contact Us</a>
+            <a class="btn btn-hero-contact" href="contact.html">Get a Free Estimate</a>
           </div>
           <p class="hero-photo-footnote">
             <a href="my-work.html">View our work</a>
@@ -108,7 +107,7 @@
             Our results speak for themselves. From grimy driveways to sparkling siding, we transform surfaces and restore your property’s curb appeal.
           </p>
           <div class="see-difference__actions">
-            <a class="btn btn-showcase" href="my-work.html">View Gallery</a>
+            <a class="btn btn-showcase" href="#work-gallery-heading">View Gallery</a>
             <a class="btn btn-showcase" href="contact.html">Get a Quote</a>
           </div>
 
@@ -224,34 +223,83 @@
         </div>
       </section>
 
-      <section class="section" aria-labelledby="services-preview-heading">
+      <section class="section section-alt work-gallery-block" aria-labelledby="work-gallery-heading">
         <div class="section-inner">
-          <div class="section-head">
-            <h2 id="services-preview-heading">Services</h2>
-            <p>
-              Residential exterior cleaning including pressure washing, house washing, soft washing, paver cleaning, deck cleaning, driveway cleaning, concrete cleaning, brick cleaning, and window cleaning.
-            </p>
+          <div class="section-head text-center">
+            <h2 id="work-gallery-heading">Work Gallery</h2>
+            <p>Recent results from real jobs. Before and after photos are shown side by side in each image.</p>
           </div>
-          <div class="services-preview">
-            <div class="service-chip">Pressure Washing</div>
-            <div class="service-chip">House Soft Washing</div>
-            <div class="service-chip">Paver Cleaning</div>
-            <div class="service-chip">Deck Cleaning</div>
-            <div class="service-chip">Concrete Cleaning</div>
-            <div class="service-chip">Brick Cleaning</div>
-            <div class="service-chip">Window Cleaning</div>
+          <div class="work-photo-grid">
+            <figure class="work-photo-card">
+              <img
+                src="images/work/showcase-yasir-main-3.png"
+                alt="Before and after exterior cleaning on front steps"
+                width="1024"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="work-photo-card">
+              <img
+                src="images/work/showcase-yasir-garage-2.png"
+                alt="Before and after garage door cleaning"
+                width="1024"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="work-photo-card">
+              <img
+                src="images/work/showcase-osama-back-2.png"
+                alt="Before and after paver cleaning and restoration"
+                width="1024"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
           </div>
-          <p style="margin-top: 1.5rem">
-            <a class="btn btn-primary" href="services.html">View all services</a>
-          </p>
         </div>
       </section>
 
-      <section class="cta-band" aria-labelledby="cta-heading">
-        <div class="section-inner text-center">
-          <h2 id="cta-heading">Ready to refresh your home’s exterior?</h2>
-          <p>Send a message or call today — estimates are free and there’s no pressure.</p>
-          <a class="btn btn-primary btn-lg" href="contact.html">Request a Free Estimate</a>
+      <section class="section home-services-accordion" aria-labelledby="services-heading">
+        <div class="section-inner">
+          <div class="section-head">
+            <h2 id="services-heading">Services</h2>
+            <p>Tap a service to see details.</p>
+          </div>
+          <div class="service-accordion-list">
+            <details class="service-accordion" open>
+              <summary>Pressure Washing</summary>
+              <p>High-quality pressure washing for hard surfaces like driveways, walkways, patios, and concrete areas.</p>
+            </details>
+            <details class="service-accordion">
+              <summary>House Soft Washing</summary>
+              <p>Gentle soft washing for siding and home exteriors to remove dirt, algae, and buildup without damaging the surface.</p>
+            </details>
+            <details class="service-accordion">
+              <summary>Paver Cleaning</summary>
+              <p>Paver cleaning to remove weeds, moss, dirt, and buildup. Polymeric sand can be added to help lock joints and improve the finish.</p>
+            </details>
+            <details class="service-accordion">
+              <summary>Deck Cleaning</summary>
+              <p>Deck cleaning to remove dirt, mildew, algae, and weather buildup while helping restore the surface.</p>
+            </details>
+            <details class="service-accordion">
+              <summary>Concrete Cleaning</summary>
+              <p>Concrete cleaning for driveways, sidewalks, steps, and patios to remove grime, stains, and organic growth.</p>
+            </details>
+            <details class="service-accordion">
+              <summary>Brick Cleaning</summary>
+              <p>Brick and stone cleaning to remove buildup, dirt, algae, and discoloration while protecting the surface.</p>
+            </details>
+            <details class="service-accordion">
+              <summary>Window Cleaning</summary>
+              <p>Exterior window cleaning to improve curb appeal and give the home a cleaner, brighter look.</p>
+            </details>
+          </div>
         </div>
       </section>
     </main>
@@ -285,7 +333,7 @@
             Satisfaction guaranteed. If anything looks off within 48 hours, I’ll come back and fix it.
           </p>
           <p style="margin-top: 1rem">
-            <a class="btn btn-secondary" href="contact.html">Request a Free Estimate</a>
+            <a class="btn btn-secondary" href="contact.html">Get a Free Estimate</a>
           </p>
         </div>
       </div>
@@ -295,7 +343,8 @@
     </footer>
 
     <div class="mobile-cta-bar">
-      <a class="btn btn-primary" href="tel:+17033886628">Text or Call — Free Estimate</a>
+      <a class="btn btn-secondary" href="sms:+17033886628">Text Us</a>
+      <a class="btn btn-primary" href="tel:+17033886628">Call Now</a>
     </div>
 
     <script>
